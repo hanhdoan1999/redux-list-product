@@ -78,6 +78,9 @@ a {
 .card-body {
   flex:none
 }
+.cursor {
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 600px) {
   .res {

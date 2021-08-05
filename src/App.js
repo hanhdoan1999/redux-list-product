@@ -1,7 +1,7 @@
 import { BrowserRouter,Switch,Route } from "react-router-dom";
-import Header from "./containers/Header";
 import ProductListing from './containers/ProductListing';
 import ProductDetail from './containers/ProductDetail';
+import Cart from "./containers/Cart";
 
 
 function App() {
@@ -11,12 +11,9 @@ function App() {
        <Switch>
        <Route path="/" exact component={ProductListing}/>
        <Route path="/product/:productId" exact component={ProductDetail}/>
+       <Route path="/cart" exact component={Cart}/>
        <Route>404 </Route>  
      </Switch>
-   
-     
-
-    
     </BrowserRouter>
   );
 }
